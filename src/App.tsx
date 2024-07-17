@@ -8,7 +8,6 @@ import ArtworkDetails from "./pages/artwork-details";
 
 
 function App() {
-  
   return (
     <BrowserRouter>
       <Routes>

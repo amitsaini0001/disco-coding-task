@@ -6,7 +6,7 @@ import {
 import { AppDispatch, useAppSelector } from "../store/store";
 
 import { useCallback, useEffect, } from "react";
-import { Link } from "react-router-dom";
+
 
 function Artwork() {
   const dispatch = useDispatch<AppDispatch>();

@@ -85,6 +85,10 @@ function ArtworkDetails() {
               <h2 className="">{itemData.artist_display} </h2>
             </span>
             <span className="flex gap-2">
+              <h2 className="font-bold">Year: </h2>
+              <h2 className="">{itemData.fiscal_year} </h2>
+            </span>
+            <span className="flex gap-2">
               <h2 className="font-bold">Origin: </h2>
               <h2 className="">{itemData.place_of_origin} </h2>
             </span>
@@ -92,10 +96,7 @@ function ArtworkDetails() {
               <h2 className="font-bold">Inscription: </h2>
               <h2 className="">{itemData.inscriptions} </h2>
             </span>
-            <span className="flex gap-2">
-              <h2 className="font-bold">Inscription: </h2>
-              <h2 className="">{itemData.inscriptions} </h2>
-            </span>
+            
           </div>
 
           <a href="/disco-coding-task/">

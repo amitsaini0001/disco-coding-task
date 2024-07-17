@@ -48,7 +48,7 @@ function Artwork() {
             .map((item) => (
                 
               <div key={`relative${item.id}-${item.image_id ?? "-imageid-"}-image`} className="relative animate-fade delay-[2000ms]">
-                <Link to={`artwork/${item.id}`}>
+                <a href={`artwork/${item.id}`}>
                 <img
                   className="w-full h-full rounded-lg object-cover cursor-pointer "
                   loading="lazy"
@@ -58,7 +58,7 @@ function Artwork() {
                     (e.currentTarget.src = item.thumbnail?.lqip ?? "")
                   }
                 />
-                </Link>
+                </a>
                 <div className="bg-black  w-full bottom-0 absolute opacity-70 p-2 transition ease-in-out">
                     <p className="[&:not(:hover)]:truncate text-ellipsis transition ease-in-out delay-150 text-center cursor-default">{item.title ?? "Unitiled"}</p>
                 </div>

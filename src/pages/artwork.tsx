@@ -48,7 +48,7 @@ function Artwork() {
             .map((item) => (
                 
               <div key={`relative${item.id}-${item.image_id ?? "-imageid-"}-image`} className="relative animate-fade delay-[2000ms]">
-                <Link to={`/artwork/${item.id}`}>
+                <Link to={`artwork/${item.id}`}>
                 <img
                   className="w-full h-full rounded-lg object-cover cursor-pointer "
                   loading="lazy"

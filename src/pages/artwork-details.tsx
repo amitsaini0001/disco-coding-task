@@ -36,7 +36,7 @@ function ArtworkDetails() {
           <h2 className=" font-bold text-5xl">No Data Found</h2>
           <div className="flex gap-10 text-xl mt-5">
             <a
-              href={"/disco-coding-task"}
+              href={"/disco-coding-task/"}
               className=" hover:scale-125 hover:font-bold cursor-pointer"
             >
               {" "}
@@ -98,7 +98,7 @@ function ArtworkDetails() {
             </span>
           </div>
 
-          <a href="/disco-coding-task">
+          <a href="/disco-coding-task/">
             <div className="absolute animate-opacityFade delay-[2000ms] top-7 left-7 font-bold text bg-black p-2 rounded-lg opacity-55 hover:opacity-100">
               {`< All Images`}
             </div>

@@ -14,10 +14,7 @@ function App() {
     <Provider store={store}>
     <BrowserRouter>
       <Routes>
-        <Route path='/disco-coding-task'>
-          <Route index={true} element={<Artwork />} />
-          <Route index={false} path="artwork/:artworkID" element={<ArtworkDetails />} />
-        </Route>
+      <Route index={false} path="/artwork/:artworkID" element={<ArtworkDetails />} />
         <Route path="*" element={<Artwork />} />
       </Routes>
     </BrowserRouter>

@@ -36,7 +36,7 @@ function ArtworkDetails() {
           <h2 className=" font-bold text-5xl">No Data Found</h2>
           <div className="flex gap-10 text-xl mt-5">
             <a
-              href={"/disco-coding-task/"}
+              href={"/"}
               className=" hover:scale-125 hover:font-bold cursor-pointer"
             >
               {" "}
@@ -85,10 +85,6 @@ function ArtworkDetails() {
               <h2 className="">{itemData.artist_display} </h2>
             </span>
             <span className="flex gap-2">
-              <h2 className="font-bold">Year: </h2>
-              <h2 className="">{itemData.fiscal_year} </h2>
-            </span>
-            <span className="flex gap-2">
               <h2 className="font-bold">Origin: </h2>
               <h2 className="">{itemData.place_of_origin} </h2>
             </span>
@@ -96,10 +92,13 @@ function ArtworkDetails() {
               <h2 className="font-bold">Inscription: </h2>
               <h2 className="">{itemData.inscriptions} </h2>
             </span>
-            
+            <span className="flex gap-2">
+              <h2 className="font-bold">Inscription: </h2>
+              <h2 className="">{itemData.inscriptions} </h2>
+            </span>
           </div>
 
-          <a href="/disco-coding-task/">
+          <a href="/">
             <div className="absolute animate-opacityFade delay-[2000ms] top-7 left-7 font-bold text bg-black p-2 rounded-lg opacity-55 hover:opacity-100">
               {`< All Images`}
             </div>

@@ -5,19 +5,23 @@ import {
 } from "react-router-dom";
 import Artwork from "./pages/artwork";
 import ArtworkDetails from "./pages/artwork-details";
+import { Provider } from "react-redux";
+import { store } from "./store/store";
 
 
 function App() {
   return (
+    <Provider store={store}>
     <BrowserRouter>
       <Routes>
-        <Route path="/">
+        <Route path="">
           <Route index={true} element={<Artwork />} />
           <Route index={false} path="artwork/:artworkID" element={<ArtworkDetails />} />
         </Route>
         <Route path="*" element={<Artwork />} />
       </Routes>
     </BrowserRouter>
+    </Provider>
   );
 }
 

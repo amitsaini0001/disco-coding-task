@@ -14,7 +14,7 @@ function App() {
     <Provider store={store}>
     <BrowserRouter>
       <Routes>
-        <Route path="">
+        <Route element={<Artwork/>}>
           <Route index={true} element={<Artwork />} />
           <Route index={false} path="artwork/:artworkID" element={<ArtworkDetails />} />
         </Route>
